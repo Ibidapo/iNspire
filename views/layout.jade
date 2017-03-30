@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="stylesheets/bootstrap.css" crossorigin="anonymous")
+    
+  body
+      nav.navbar.fixed-top.hidden-sm-down
+          a.navbar-brand.logo(href="/home")
+          ul.topnav
+              li.mynav
+                  a(href="/story") Our Story
+              li.mynav
+                  a(href="") Blog
+              li.mynav
+                  a(href="/CSR") Social Work
+              li.mynav
+                  a(href="/contact") Contact
+          a.icon(href="javascript:void(0);")
+              div#nav-icon1
+                  span
+                  span
+                  span
+     
+  block content
+   div.col-xs-12#footer
+
+    script(src="javascripts/jquery.min.js")
+    script(src="javascripts/bootstrap.min.js")
+    script(src="javascripts/tether.min.js")
+    script(src="javascripts/functions.js")
+    script.
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2').click(function () {
+                $(this).toggleClass('open');
+                $('.mynav').toggleClass('exp');
+            });
+        });

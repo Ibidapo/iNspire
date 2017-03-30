@@ -1,0 +1,551 @@
+body {
+padding: 0;
+font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+background-color: black;
+color: black;
+}
+.navbar{
+    height: 80px;
+}
+ul.topnav{
+list-style-type: none;
+display: block;
+overflow: hidden;
+margin: 0;
+padding: 0;
+width: 478px;
+}
+.mynav, .mynav.exp{
+display: none;
+padding: 10px 20px;
+font-size: 20px;
+}
+.mynav.exp, .mynav.exp a{
+display: inline-block !important;
+color: gold;
+}
+.mynav.exp a:hover{
+text-decoration: none !important;
+color: #0275d8;
+}
+.icon{
+position: fixed;
+top: 15px;
+right: 1%;
+padding: 15px;
+z-index: 99999;
+}
+.logo, .mlogo{
+background: white url(../images/inspire.png) no-repeat center;
+height: 112px;
+width: 112px;
+border-radius: 50%;
+border: 3px solid gold;
+position: fixed;
+
+}
+.mlogo{
+height: 78px;
+width: 78px;
+border: 2px solid gold;
+z-index: 99999;
+}
+.overlay{
+background: rgba(0,0,0,0.9);
+height:100%;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+transition: 1s;
+}
+.menu{
+position: relative;
+top: 15%;
+list-style-type: none;
+text-align: center;
+padding: 0;
+}
+.menu li{
+font-size: 36px;
+padding: 20px;
+color: gold;
+}
+#nav-icon1, #nav-icon2{
+width: 35px;
+height: 25px;
+position: relative;
+margin: auto;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+#nav-icon1 span, #nav-icon2 span{
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+background: gold;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+top: 0;
+}
+#nav-icon1 span:nth-child(2) {
+top: 8px;
+}
+#nav-icon1 span:nth-child(3) {
+top: 16px;
+}
+#nav-icon1.open span:nth-child(1) {
+top: 8px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -30px;
+}
+#nav-icon1.open span:nth-child(3) {
+top: 8px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+#nav-icon2 span:nth-child(1) {
+top: 0;
+}
+#nav-icon2 span:nth-child(2), #nav-icon2 span:nth-child(3) {
+top: 8px;
+}
+#nav-icon2 span:nth-child(4) {
+top: 16px;
+}
+#nav-icon2.open span:nth-child(1) {
+top: 8px;
+width: 0;
+left: 50%;
+}
+#nav-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+#nav-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+#nav-icon2.open span:nth-child(4) {
+top: 16px;
+width: 0;
+left: 50%;
+}
+.loader{
+position: fixed;
+background-color: #939598;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 100%;
+width: 100%;
+z-index: 99999999;
+}
+#loader-4{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 10%;
+width: 200px;
+z-index: 9999;
+margin: auto;
+overflow: visible;
+}
+
+#loader-4 span{
+display: inline-block;
+background: url(../images/bulb.png) repeat 50px center;
+width: 50px;
+height: 50px;
+margin: 35px 5px;
+opacity: 0;
+}
+
+#loader-4 span:nth-child(1){
+animation: opacitychange 2s ease-in-out 0.33s infinite;
+}
+
+#loader-4 span:nth-child(2){
+animation: opacitychange 2s ease-in-out 0.66s infinite;
+}
+
+#loader-4 span:nth-child(3){
+animation: opacitychange 2s ease-in-out 1.2s infinite;
+}
+
+@keyframes opacitychange{
+    0%, 100%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 1;
+    }
+}
+
+p {
+font-family: 'Raleway', sans-serif;
+font-weight: lighter;
+margin: 0;
+color:white;
+}
+#n{
+  color:white;
+  margin: 49px 25px 0 25px;
+}
+#n:hover {
+    color:silver;
+    text-decoration:none;
+}
+#bannera, #bannerb{
+position: fixed;
+top:0;
+background-image: url(../images/software.png);
+height: 50%;
+width: 100%;
+background-size: 100% 100%;
+}
+#bannerb {
+top:50%;
+background-image: url(../images/digital-marketing.png);
+}
+#content {
+font-size: 22px;
+}
+#intro {
+position: fixed;
+top: 40%;
+margin-left: 1%;
+}
+.pOff{
+padding: 0 !important;
+}
+.mOff{
+margin: 0 !important;
+}
+#heading {
+color: white;
+text-align:center;
+margin: 130px 0 20px 0;
+}
+#subHeading {
+color: yellow;
+text-align:center;
+font-size: 20px;
+margin: 10% 0 2% 0;
+font-weight: 500;
+}
+.display {
+margin: 35px 0 0 0;
+text-align: right;
+color: white;
+}
+#ds ,#ma {
+position: relative;
+top: 35%;
+color: white;
+float: right;
+right: 1%;
+margin: 0;
+font-size:36px;
+border-radius: 0;
+border: 5px solid rgba(255, 255, 255, 0.4);
+}
+#ma{
+top: 55%;
+}
+#ds:hover, #ma:hover{
+background: rgba(255, 255, 255, 0.4);
+border:5px solid transparent;
+}
+#getQuotea {
+margin: 200px 0 47px 0;
+}
+.btn.btn-outline-primary:hover{
+background: none ;
+opacity: 1;
+}
+#b{
+text-align: center;
+}
+#contactus{
+border:1px solid yellow;
+margin:2% 0 2% 0;
+color:#939598;
+}
+#contactus:hover{
+color:white;
+}
+#icoSet{
+background-image:url(../images/icoset.jpg);
+height:100px;
+}
+#autobanner{
+background-image:url(../images/auto.jpg);
+height: 680px;
+}
+#drive {
+ margin:63% 0 0 12.5%;
+ font-size:1.8rem;
+font-family: 'Raleway', sans-serif;
+}
+.believe{
+ font-family:OCR A Std;
+ font-weight: 500;
+}
+.l1 {
+font-size: 14px;
+font-family: 'Raleway', sans-serif;
+}
+.l2 {
+font-size: 50px;
+color: #00f0ff;
+line-height: 1;
+font-family: 'Raleway', sans-serif;
+font-weight: lighter;
+}
+#aboutArea {
+padding: 5% 11% 5% 15%;
+background-color: #545050;
+}
+#box {
+background-image:url(../images/abouttexture.jpg);
+margin-bottom: 2%; 
+}
+#vhead {
+margin: 12% 0 0 5%;
+font-size: 25px;
+font-family: 'Raleway', sans-serif;
+}
+#vline{
+margin: 0;
+border: 1px solid white;
+width: 90%;
+}
+#vtext {
+margin: 2% 0 0 0;
+}
+#vIcon {
+float: right;
+width: 90px;
+}
+#varrow {
+width: 30px;
+margin: 0 0 10% 0;
+}
+#varrow1:hover ~ #varrow {
+float:right
+}
+#vPre {
+margin: 0;
+}
+#mhead {
+margin: 9.7% 0 0 5%;
+font-size: 25px;
+font-family: 'Raleway', sans-serif;
+}
+#mtext {
+margin: 1.3% 0 0 0;
+}
+#mline{
+margin: 0;
+border: 1px solid white;
+width: 100%;
+}
+#mIcon {
+float: right;
+width: 90px;
+}
+#marrow {
+width: 30px;
+margin: 0 0 18% 0;
+}
+.offsetv{
+  margin-left:1.3%;
+}
+.container {
+margin: 0 auto;
+}
+.apply{
+background-image:url(../images/icoset.jpg);
+font-size: 40px;
+line-height:1;
+padding:3% 10% 0 10%;
+}
+#applyArea{
+padding-left:9%;
+}
+#applyText{
+margin:0
+}
+#applyfollowup{
+font-size:10px;
+}
+#applyButton{
+background-color: transparent;
+border: 1px solid #00f0ff;
+margin: 0;
+}
+#applyImg{
+width: 300px;
+}
+#credentials{
+text-align: center;
+background-color: black;
+padding: 2% 3% 2% 3%;
+}
+#clogo{
+width:100px
+}
+#digicontact {
+background-color:#545050;
+padding: 1% 2% 1% 20%; 
+}
+.cText{
+margin: 1% 0 0 0;
+}
+#csbody{
+margin: 22% 0 7% 70%;  
+z-index:1005;
+position: relative;
+}
+#csfield {
+padding:0 1% 0 0;
+}
+#contactbg{
+background-image:url(../images/icoset.jpg);
+}
+#csborder{
+border: 3px solid blue;
+height: 460px;
+margin-top: 11% 
+}
+#csrheading{
+font-size: 60px;
+color: slategrey;
+}
+#csrheading:hover ~ #v {
+color:#497600
+}
+.cs{
+background: -webkit-linear-gradient(#efe, #ed9);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#csr{  
+width:100%;
+height:560px;
+margin:14% 0 0 0;
+}
+#csrbody{
+margin:42% 0 0 7%;  
+}
+#csrLink{
+color: yellow;
+border: 1px solid yellow;
+margin: 5% 0 1% 0;
+}
+#csrBg1 {
+opacity: 0.4;
+}
+#csrLink:hover{
+color:white;
+background:#1b3f75;
+}
+#csrBg{
+background-color:black;
+padding: 0;
+margin:0;
+height:660px
+}
+#csrBg:hover ~ #csrBg1{
+opacity:  1;  
+transform: scale(0.9);
+transition: all .7s ease-in-out
+}
+#csrexplanationbg{
+background-color:black; 
+opacity:0.5;        
+} 
+#tag{
+color:white;
+float:right;
+font-size:1rem
+}
+#gType {
+color:white;
+}
+#footer{
+width:100%;
+height:120px;
+background-color: #efefef;
+}
+@media (max-width:768px) {
+#links {
+display: none;
+}
+#ds, #ma{
+font-size: 28px;
+}
+#content{
+font-size: 20px;
+}
+.icon{
+top:25px;
+}
+}
+@media (max-width:544px) {
+#ds, #ma{
+display: block;
+width: 245px;
+font-size: 22px;
+float: none;
+right: 0;
+margin: 0 auto !important;
+}
+#ma{
+width: 290px;
+}
+#content{
+font-size: 18px;
+}
+}
+@media (max-width: 380px) {
+#intro{
+top: 35%;
+}
+}

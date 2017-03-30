@@ -1,0 +1,66 @@
+extends layout
+
+block content
+ div.containerfluid#contactbg
+  div.row
+   div.col-xs-12
+    p#subHeading  Thank you for choosing iNspire, Lets talk Digital! 
+     div.col-sm-12 
+       form.form-horizontal(action="/index",method="POST")
+            div.form-group.row
+               div.col-sm-3
+                 label.control-label#tag Name
+               div.col-sm-6
+                 input.form-control(type="text" name="bid" placeholder="" required)
+            div.form-group.row
+                div.col-sm-3
+                  label.control-label#tag Address
+                div.col-sm-6
+                  input.form-control(type="text" name="accesskey1" placeholder="" required)
+            div.form-group.row
+                div.col-sm-3
+                  label.control-label#tag Email
+                div.col-sm-6
+                  input.form-control(type="text" name="accesskey2" placeholder="" required)
+            div.form-group.row
+                div.col-sm-3
+                  label.control-label#tag Mobile Number 
+                div.col-sm-6
+                  input.form-control(type="text" name="accesskey3" placeholder="" required)
+            div.form-group.row
+                div.col-sm-3
+                  label.control-label#tag Designation
+                div.col-sm-6
+                  input.form-control(type="text" name="accesskey2" placeholder="" required)      
+            div.form-group.row
+                 div.col-sm-3 
+                   label.control-label#tag Reason for contact  
+                  div.col-sm-6
+                     select(class="form-control" name="choiceMaterial" required)
+                       option Software
+                       option Design
+                       option Marketing 
+                       option Analytics
+            div.form-group.row
+                 div.col-sm-3 
+                   label.control-label#tag Preferred contact time  
+                  div.col-sm-6
+                     select(class="form-control" name="choiceMaterial" required)
+                       option Morning
+                       option Midday
+                       option Evening                                
+            div.form-group.row
+                div.col-sm-3
+                  label.control-label#tag Addtional information
+                div.col-sm-6
+                  input.form-control(type="text" name="accesskey2" placeholder="" required)           
+         div.col-sm-12#b  
+           a.btn.btn-outline-primary#contactus(href='/display') Submit  
+               
+   
+         
+         
+      
+   
+     
+     

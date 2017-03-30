@@ -1,0 +1,104 @@
+extends layout
+
+block content
+ div.col-xs-12#icoSet 
+ div.col-xs-12#autobanner
+  div.col-xs-7#believe
+    p#drive we are driven by the idea #[br]
+     |digital automations have the capacity to#[br]
+     |increase both Commercial and recreational #[br]
+     |productivty #[span.believe #DIGITECH]
+ div.col-xs-12#aboutArea
+     p #[span.l1 Interested in iNspire?]  #[br]
+       |#[span.l2 Find out more about our culture]
+     div.row
+     div.col-sm-5#box
+       div.col-xs-12
+        div.col-xs-10#v
+          p#vhead Values
+          hr#vline
+        div.col-xs-2#v
+          img#vIcon(src="/images/values.jpg" alt="" width="90")
+        div.col-xs-12#vtext
+         p#vPre High performance teams are grown on #[br]
+          |strong values. Find out what traits #[br]
+          |drive our results.
+        div.col-xs-3.offset-sm-9#varrow1   
+          img#varrow(src="/images/arrow.png" alt="")
+     div.col-sm-6.offsetv#box
+       div.col-xs-12
+        div.col-xs-10#v
+          p#mhead Mission
+          hr#mline
+        div.col-xs-2#v
+          img#mIcon(src="/images/values.jpg" alt="" width="90")
+        div.col-xs-12#mtext
+         p#mPre(onhover="slide()") High performance teams are grown on #[br]
+          |strong values. Find out what traits #[br]
+          |drive our results.
+        div.col-xs-2.offset-sm-10   
+          img#marrow(src="/images/arrow.png" alt="")
+     div.row     
+     div.col-sm-6#box
+       div.col-xs-12
+        div.col-xs-10#v
+          p#mhead History
+          hr#mline
+        div.col-xs-2#v
+          img#mIcon(src="/images/values.jpg" alt="" width="90")
+        div.col-xs-12#mtext
+         p#mPre High performance teams are grown on #[br]
+          |strong values. Find out what traits #[br]
+          |drive our results.
+        div.col-xs-2.offset-sm-10   
+          img#marrow(src="/images/arrow.png" alt="")
+     div.col-sm-5.offsetv#box
+       div.col-xs-12
+        div.col-xs-10#v
+          p#vhead Vision
+          hr#vline
+        div.col-xs-2#v
+          img#vIcon(src="/images/values.jpg" alt="" width="90")
+        div.col-xs-12#vtext
+         p#vPre High performance teams are grown on #[br]
+          |strong values. Find out what traits #[br]
+          |drive our results.
+        div.col-xs-3.offset-sm-9   
+          img#varrow(src="/images/arrow.png" onhover="slide()" alt="")
+ div.row         
+  div.col-xs-12.apply
+   div.col-sm-7#applyArea
+      p#applyText Are a programmer, Designer #[br]
+       |or creative thinker? #[br]
+      p#applyfollowup Apply now to join our software or marketing team today]
+      a.btn.btn-primary#applyButton(href="#") Apply now
+   div.col-sm-5
+      img#applyImg(src="/images/team .png" alt="")
+ div.row
+  div.col-xs-12#credentials
+   div.row
+    div.col-xs-12
+     p We've worked with some reputable brands and start up's on digital projects 
+   div.row
+    div.col-xs-12
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+     div.col-sm-2
+      img#clogo(src="/images/team .png" alt="")
+ div.row#digicontact
+    div.col-xs-12
+     div.col-sm-2
+      a.btn.btn-primary#applyButton(href="#") Contact us
+     div.col-sm-10
+      p.cText Find out how your business practices can be optimized through digital
+script.
+   function slide() {
+    document.getElementById("vPre").style.color= "yellow";}; 

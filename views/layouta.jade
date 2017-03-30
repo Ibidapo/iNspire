@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="stylesheets/bootstrap.css" crossorigin="anonymous")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway")
+    script(src="javascripts/jquery.min.js")
+    script(type='text/javascript').
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $(".loader").fadeOut("slow", function () {
+            $(this).remove();
+          });
+        }, 5000);
+      });
+  body
+    .loader
+      #loader-4
+        span
+        span
+        span
+    nav.navbar.fixed-top.hidden-sm-down
+      a.navbar-brand.logo(href="/")
+      ul.topnav.mx-auto
+        li.mynav
+          a(href="/story") Our Story
+        li.mynav
+          a(href="") Blog
+        li.mynav
+          a(href="/CSR") Social Work
+        li.mynav
+            a.btn.btn-primary(href='/contact', style='color: gold;') Contact
+      a.icon(href="javascript:void(0);")
+        #nav-icon1
+          span
+          span
+          span
+    nav.navbar.fixed-top.navbar-toggleable-md.hidden-md-up
+      a.navbar-brand.mlogo(href="/")
+      a.navbar-toggler.icon(href='javascript:void(0);', data-toggle='collapse', data-target='#navbarToggle', aria-controls='navbarToggle', aria-expanded='false', aria-label='Toggle navigation')
+        #nav-icon2
+          span
+          span
+          span
+          span
+      #navbarToggle.collapse.navbar-collapse.overlay.hidden-md-up(aria-expanded='false')
+        ul.menu
+          li Our Story
+          li Blog
+          li Social Work
+          li Contact
+   .containerfluid
+    block content
+
+    script(src="javascripts/bootstrap.min.js")
+    script(src="javascripts/tether.min.js")
+    script(src="/javascripts/functions.js")
+    script.
+      $(document).ready(function(){
+        $('#nav-icon1,#nav-icon2').click(function(){
+          $(this).toggleClass('open');
+          $('.mynav').toggleClass('exp');
+        });
+      });
