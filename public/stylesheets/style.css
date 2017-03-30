@@ -13,7 +13,7 @@ display: block;
 overflow: hidden;
 margin: 0;
 padding: 0;
-width: 478px;
+width:45%;
 }
 .mynav, .mynav.exp{
 display: none;
@@ -316,11 +316,14 @@ height:100px;
 }
 #autobanner{
 background-image:url(../images/auto.jpg);
-height: 680px;
+height: 480px;
+background-size: cover;
+width: 100%;
 }
-#drive {
- margin:63% 0 0 12.5%;
- font-size:1.8rem;
+#drive{
+position: fixed;
+top:180px;
+font-size:1.8rem;
 font-family: 'Raleway', sans-serif;
 }
 .believe{
@@ -406,11 +409,15 @@ font-size: 40px;
 line-height:1;
 padding:3% 10% 0 10%;
 }
-#applyArea{
-padding-left:9%;
+.apply{
+background-image:url(../images/icoset.jpg);
+font-size: 40px;
+line-height:1;
+padding:3% 10% 0 10%;
 }
-#applyText{
-margin:0
+.aholder{
+position: relative;
+top: 36px;
 }
 #applyfollowup{
 font-size:10px;
@@ -422,11 +429,15 @@ margin: 0;
 }
 #applyImg{
 width: 300px;
+position: relative;
+bottom: 13px;
 }
 #credentials{
 text-align: center;
-background-color: black;
 padding: 2% 3% 2% 3%;
+}
+#tcolor{
+color:slategrey;
 }
 #clogo{
 width:100px
@@ -509,6 +520,10 @@ font-size:1rem
 #gType {
 color:white;
 }
+#body1{
+margin: 0px !important;
+width: 100% !important;
+}
 #footer{
 width:100%;
 height:120px;
@@ -527,6 +542,15 @@ font-size: 20px;
 .icon{
 top:25px;
 }
+.aholder,.apply {
+font-size: 23px;
+}
+.aholder {
+top:10px;
+}
+.l2 {
+ font-size: 37px;
+}
 }
 @media (max-width:544px) {
 #ds, #ma{
@@ -544,8 +568,43 @@ width: 290px;
 font-size: 18px;
 }
 }
+@media (max-width:414px) {
+.aholder,.apply, #applyImg {
+text-align: center;
+font-size: 23px;
+top:0px;
+bottom: 0px;
+}
+#drive{
+   font-size: 1.2rem;
+}
+#applyImg {
+  width: 200px;
+}
+#applyButton,#applyfollowup {
+ margin: 2% 0 4% 0;
+}
+#applyfollowup {
+font-size: 15px;
+}
+#aboutArea{
+padding: 0px;
+}
+.l2 {
+ font-size: 26px;
+}
+.interest{
+margin-top: 10%;
+}
+.offsetv {
+ margin: 0px;
+}
+}
 @media (max-width: 380px) {
 #intro{
 top: 35%;
+}
+.l2 {
+ font-size: 23px;
 }
 }
